@@ -1,0 +1,6 @@
+---
+# Plugin language (en/ru)
+language: "en"
+
+kill_from_creative: false
+...

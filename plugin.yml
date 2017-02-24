@@ -5,3 +5,20 @@ api: [3.0.0-ALPHA3]
 load: STARTUP
 author: SuperPuperSteve
 description: Kill Control Manager
+
+permissions:
+ nokill:
+  description: Top permission of NoKill
+  default: op
+  
+  children:
+   nokill.except:
+    description: Top permision of execption of killing
+    default: op
+    
+    children:
+     nokill.except.flying:
+      description: Exception for killing while flying
+      default: op
+     nokill.except.gamemode:
+      description: Exception for killing while in Creative

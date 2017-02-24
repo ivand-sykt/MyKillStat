@@ -1,2 +1,2 @@
-config.yml
-lang_*.yml
+/config.yml
+/lang_*.yml
