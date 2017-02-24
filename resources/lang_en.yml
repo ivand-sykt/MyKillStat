@@ -1,3 +1,9 @@
 ---
 lang_selected: "§bEnglish has been selected"
+
+economy_found: "§aSuccessfully connected to economy plugin!"
+economy_not_found: "§cCouldn't find economy plugin. Shutting down the server..."
+
+kill_while_flying: "§cYou cannot damage while flying!"
+kill_from_creative: "§cYou cannot damage in Creative!"
 ...

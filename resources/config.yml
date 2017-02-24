@@ -2,5 +2,16 @@
 # Plugin language (en/ru)
 language: "en"
 
+# Enable this if you are going to use kill_money
+# Включите это, если вы собираетесь использовать kill_money
+use_economy: true
+# EconomyAPI must be installed
+# EconomyAPI должен быть установлен
+
+# How much money should player get if he kills someone?
+# Сколько денег должен получить игрок, если он убьёт кого-то?
+kill_money: 10
+
 kill_from_creative: false
+kill_while_flying: false
 ...
