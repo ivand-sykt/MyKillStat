@@ -2,14 +2,6 @@
 
 namespace NoKill;
 
-/* NoKill
-[ ] block creative kills
-[ ] block flying kills
-[ ] add permissions
-[x] multilanguage
-[ ] money for kills
-*/
-
 use NoKill\Language;
 use NoKill\EconomyManager;
 

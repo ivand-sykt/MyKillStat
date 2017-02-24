@@ -1,7 +1,7 @@
 name: NoKill
 main: NoKill\NoKill
-version: "0.2"
-api: [3.0.0-ALPHA3]
+version: "0.3"
+api: ["3.0.0-ALPHA1", "3.0.0-ALPHA3", "3.0.0-ALPHA3"]
 load: STARTUP
 author: SuperPuperSteve
 description: Kill Control Manager

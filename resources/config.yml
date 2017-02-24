@@ -12,6 +12,10 @@ use_economy: true
 # Сколько денег должен получить игрок, если он убьёт кого-то?
 kill_money: 10
 
+# Enable killing from Creative?
+# Можно ли убивать из Креатива?
 kill_from_creative: false
+# Enable killing while flying?
+# Можно ли убивать во время полёта?
 kill_while_flying: false
 ...
