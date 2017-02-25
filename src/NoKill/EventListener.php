@@ -46,10 +46,6 @@ class EventListener implements Listener {
 				return true;
 			}
 			
-			var_Dump($victim->getHealth());
-			var_dump($event->getFinalDamage());
-			var_dump( $victim->getHealth() - $event->getFinalDamage());
-			
 			if(( $victim->getHealth() - $event->getFinalDamage()) <= 0){
 				if(!$this->plugin->config->get('use_economy')) return false;
 				
@@ -59,6 +55,8 @@ class EventListener implements Listener {
 			}
 			
 		}
+		
+		return;
 		
 	}
 	
