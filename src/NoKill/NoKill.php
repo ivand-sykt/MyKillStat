@@ -16,6 +16,8 @@ class NoKill extends PluginBase {
 	public function onEnable() {
 		@mkdir($this->getDataFolder());
 		
+		$this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
+		
 		if(!is_file($this->getDataFolder() . 'config.yml')){
 			$this->saveResource('config.yml');
 		}
@@ -30,7 +32,6 @@ class NoKill extends PluginBase {
 			$this->economy->economy_init();
 		}
 		
-		$this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
 	}
 	
 	public function onDisable() {
