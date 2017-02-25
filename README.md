@@ -2,9 +2,6 @@
 NoKill is simple kill managment (and in future keeping stats) plugin.
 It blocks killing in creative and while flying.
 
-## In upcoming releases:
-* Kill stats? 
-
 ## Last update: v0.1(February 24th, 2017)
 * First release
 
