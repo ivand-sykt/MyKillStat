@@ -1,8 +1,8 @@
 <?php
 
-namespace NoKill;
+namespace MyKillStat;
 
-use NoKill\NoKill;
+use MyKillStat\MyKillStat;
 
 use pocketmine\plugin\Plugin;
 
@@ -10,7 +10,7 @@ class EconomyManager {
 	
 	public $api;
 	
-	public function __construct(NoKill $plugin) {
+	public function __construct(MyKillStat $plugin) {
 		$this->plugin = $plugin;
 		$this->lang = $this->plugin->getLanguage();
 	}

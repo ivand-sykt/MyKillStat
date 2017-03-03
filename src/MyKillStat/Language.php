@@ -1,13 +1,13 @@
 <?php
 
-namespace NoKill;
+namespace MyKillStat;
 
-use NoKill\NoKill;
+use MyKillStat\MyKillStat;
 use pocketmine\utils\Config;
 
 class Language {
 	
-	public function __construct(NoKill $plugin) {
+	public function __construct(MyKillStat $plugin) {
 		$this->plugin = $plugin;
 	}
 	

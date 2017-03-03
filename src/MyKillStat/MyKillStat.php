@@ -1,15 +1,12 @@
 <?php
 
-namespace NoKill;
-
-use NoKill\Language;
-use NoKill\EconomyManager;
+namespace MyKillStat;
 
 use pocketmine\plugin\PluginBase;
 
 use pocketmine\utils\Config;
 
-class NoKill extends PluginBase {
+class MyKillStat extends PluginBase {
 	
 	public $lang;
 	
@@ -31,7 +28,7 @@ class NoKill extends PluginBase {
 			$this->economy = new EconomyManager($this);
 			$this->economy->economy_init();
 		}
-		
+	
 	}
 	
 	public function onDisable() {
@@ -44,5 +41,9 @@ class NoKill extends PluginBase {
 	
 	public function getEconomy() {
 		return $this->economy->api;
+	}
+	
+	public static function test(){
+		var_dump(1);
 	}
 }

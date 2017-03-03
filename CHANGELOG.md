@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.4.1
+* Namespace change due to changing plugin features
+
 ## v0.4
 * Disabling plugin instead of shutting down the server if EconomyAPI is not found
 

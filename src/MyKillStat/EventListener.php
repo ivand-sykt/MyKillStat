@@ -1,8 +1,8 @@
 <?php
 
-namespace NoKill;
+namespace MyKillStat;
 
-use NoKill\NoKill;
+use MyKillStat\MyKillStat;
 
 use pocketmine\event\Listener;
 
@@ -12,7 +12,7 @@ use pocketmine\Player;
 
 class EventListener implements Listener {
 	
-	public function __construct(NoKill $plugin) {
+	public function __construct(MyKillStat $plugin) {
 		$this->plugin = $plugin;
 		$this->lang = $this->plugin->getLanguage();
 	}
@@ -27,9 +27,7 @@ class EventListener implements Listener {
 			if(!$damager instanceof Player) return false;
 			
 			if($damager->isCreative() and ($this->plugin->config->get('kill_from_creative') == false)) {
-				if($damager->hasPermission('nokill.except.creative')) return false;
-			//	or $damager->hasPermission('nokill.except') 
-			//	or $damager->hasPermission('nokill')) return false; 
+				if($damager->hasPermission('mykillstat.except.creative')) return false;
 
 				$event->setCancelled();
 				$damager->sendMessage($this->lang->getMessage('kill_from_creative'));
@@ -37,9 +35,7 @@ class EventListener implements Listener {
 			}
 
 			if($damager->isFlying() and ($this->plugin->config->get('kill_while_flying') == false)) {
-				if($damager->hasPermission('nokill.except.flying')) return false;
-			//	or $damager->hasPermission('nokill.except') 
-			//	or $damager->hasPermission('nokill')) return false; 
+				if($damager->hasPermission('mykillstat.except.flying')) return false;
 
 				$event->setCancelled();
 				$damager->sendMessage($this->lang->getMessage('kill_while_flying'));

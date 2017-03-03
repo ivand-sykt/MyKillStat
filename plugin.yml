@@ -1,25 +1,25 @@
-name: NoKill
-main: NoKill\NoKill
+name: MyKillStat
+main: MyKillStat\MyKillStat
 version: "0.4"
-api: ["3.0.0-ALPHA1", "3.0.0-ALPHA2", "3.0.0-ALPHA3"]
+api: ["3.0.0-ALPHA1", "3.0.0-ALPHA2", "3.0.0-ALPHA3", "3.0.0-ALPHA4"]
 load: STARTUP
 author: SuperPuperSteve
 description: Kill Control Manager
 softdependcy: ["EconomyAPI"]
 
 permissions:
- nokill:
+ mykillstat:
   description: Top permission of NoKill
   default: op
   
   children:
-   nokill.except:
+   mykillstat.except:
     description: Top permision of execption of killing
     default: op
     
     children:
-     nokill.except.flying:
+     mykillstat.except.flying:
       description: Exception for killing while flying
       default: op
-     nokill.except.gamemode:
+     mykillstat.except.gamemode:
       description: Exception for killing while in Creative
