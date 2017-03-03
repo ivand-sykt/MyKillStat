@@ -43,7 +43,4 @@ class MyKillStat extends PluginBase {
 		return $this->economy->api;
 	}
 	
-	public static function test(){
-		var_dump(1);
-	}
 }
